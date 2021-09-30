@@ -1,2 +1,2 @@
 # C0921G1
-Code Demo lớp C0921G1 update thông tin của Readme
+Đây là thông tin của file Readme do bạn A sửa chữa
