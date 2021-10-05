@@ -1,0 +1,1 @@
+alert("Hello tui là code trong file javascript myjs");

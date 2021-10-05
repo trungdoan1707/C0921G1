@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    /**
+     * Phân biệt var và let
+     */
+    //--> var được phép khai báo lại tên biến còn let thì không
+    // var number1 = 10;
+    // alert("Giá trị lần 1 của number 1: " + number1);
+    // var number1 = 15;
+    // alert("Giá trị lần 2 của number 1: " +number1)
+
+    //--> Cơ chế hoisting của var
+    // alert(number1);
+    // var number1 = 10;
+    // alert(number1)
+
+    //--> var có scope là function scope còn let là block scope
+    function sum(){
+        var a = 10;
+        var b = 20;
+        if(a > 0){
+            var c = a + b;
+            let d = 10;
+        }
+        alert("Tổng của 2 số a và b là: " + c);
+        // alert(d);
+    }
+    sum();
+
+    //Khai báo hằng số bằng const
+    const PI = 3.14;
+    alert(PI);
+</script>
+</body>
+</html>
