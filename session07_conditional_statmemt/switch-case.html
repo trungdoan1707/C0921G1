@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="result"></h1>
+
+<script>
+    /**
+     * Cho người dùng nhập số từ 1 đến 7
+     * nếu người dùng nhập 1: hiển thị hôm nay là chủ nhật
+     * nếu người dùng nhập 2: hiển thị hôm nay là thứ 2
+     * nếu người dùng nhập 3: hiển thị hôm nay là thứ 3
+     * nếu người dùng nhập 4: hiển thị hôm nay là thứ 4
+     * nếu người dùng nhập 5: hiển thị hôm nay là thứ 5
+     * nếu người dùng nhập 6: hiển thị hôm nay là thứ 6
+     * nếu người dùng nhập 7: hiển thị hôm nay là thứ 7
+     */
+    let num = parseInt(prompt("Mời bạn nhập vào 1 số từ 1 đến 7: "));
+    switch (num) {
+        case 1:
+            document.getElementById("result").innerText = "hôm nay là chủ nhật";
+            break;
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+            document.getElementById("result").innerText = "hôm nay là thứ " + num;
+            break;
+        default:
+            document.getElementById("result").innerText = "Bạn phải nhập từ 1 đến 7";
+    }
+</script>
+</body>
+</html>
