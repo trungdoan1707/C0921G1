@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    /**
+     * Sử dụng vòng lặp in ra màn hình các số từ 0 đến 9
+     * Số thứ: 0
+     * Số thứ: 1
+     * Số thứ: 2
+     * Số thứ: 3
+     * ....
+     */
+    // for (let i = 0; i < 10; i++) {
+    //     document.writeln("<h1>Số thứ " + i + "</h1>");
+    // }
+
+    /**
+     * Sử dụng vòng lặp for để in ra màn hình bảng cửu chương 2
+     * 2 x 1 = 2
+     * 2 x 2 = 4
+     * 2 x 3 = 6
+     * ...
+     */
+    // for (let i = 1; i <= 10; i++) {
+    //     document.writeln("2 x " + i + " = " + 2 * i);
+    //     document.writeln("</br>");
+    // }
+
+    /**
+     * Biến thể của vòng lặp for
+     * Không đầy đủ các biểu thức
+     */
+    // count = 1;
+    // for (; count <= 10;) {
+    //     document.writeln("2 x " + count + " = " + 2 * count);
+    //     document.writeln("</br>");
+    //     count++;
+    // }
+
+    /**
+     * Cho người dùng liên tục nhập vào 1 giá trị thông qua prompt() và hiện thị lên màn hình thông báo
+     * Nếu người dùng nhập q thì dừng chương trình
+     */
+    // let result = prompt("Vui lòng nhập thông tin của bạn: ");
+    // while (result !== "q"){
+    //     alert("Bạn đã nhập : " + result);
+    //     result = prompt("Vui lòng nhập thông tin của bạn: ");
+    // }
+
+    /**
+     * Sử dụng vòng lặp while để in ra màn hình bảng cửu chương 2
+     * 3 x 1 = 3
+     * 3 x 2 = 6
+     * 3 x 3 = 9
+     * ...
+     */
+    // let i = 1;
+    // let result = 0;
+    // while (i < 11) {
+    //     result = 3 * i;
+    //     document.writeln("3 x " + i + " = " + result);
+    //     document.writeln("</br>");
+    //     i++;
+    // }
+
+    /**
+     * Cho người dùng liên tục nhập vào 1 giá trị thông qua prompt() và hiện thị lên màn hình thông báo
+     * Nếu người dùng nhập q thì dừng chương trình
+     */
+    // let result;
+    // do {
+    //     result = prompt("Nhập thông tin của bạn: ");
+    //     alert("Bạn vừa nhập : " + result);
+    // }while (result !== "q")
+
+    /**
+     * Sử dụng vòng lặp for để in ra màn hình các số chia hết cho 3, 5 và < 100
+     */
+    // for (let i = 0; i < 100; i++){
+    //     if (i % 3 !== 0 && i % 5 !==0){
+    //         continue;
+    //     }
+    //     document.writeln(" " + i);
+    // }
+
+    /**
+     * in ra màn hình bảng cửu chương từ 2 đến 9
+     */
+    // for (let i = 2; i < 10; i++) {
+    //     for (let j = 1; j <= 10; j++){
+    //         document.writeln(i + " x " + j + " = " + j * i);
+    //         document.writeln("</br>");
+    //     }
+    // }
+
+    /**
+     * vẽ hình chữ nhật dấu *
+     */
+    for (let i = 0; i < 5; i++){
+        for (let j = 0; j < 10; j++){
+            document.writeln("*  ");
+        }
+        document.writeln("<br>")
+    }
+</script>
+</body>
+</html>

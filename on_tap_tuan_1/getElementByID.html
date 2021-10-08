@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="username">
+<button onclick="login()">Login</button>
+<script>
+  let username = document.getElementById("username");
+
+  function login(){
+    let userLogin = username.value;
+    alert("Bạn vừa login với username là: " + userLogin);
+  }
+</script>
+</body>
+</html>
