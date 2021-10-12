@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    let numbers = [5, 1, 4, 6, 7, 10, 8, 11];
+    /**
+     * Thêm và xóa phần tủ đầu mảng
+     */
+    //Thêm
+    // numbers.unshift(20);
+    // document.writeln(numbers.toString());
+    //Xóa
+    // numbers.shift();
+    // numbers.shift();
+    // document.writeln(numbers.toString());
+
+    /**
+     * Thêm và xóa các phần tử ở cuối mảng
+     */
+    // numbers.push(20);
+    // // document.writeln(numbers.toString());
+    // numbers.pop();
+    // numbers.pop();
+    // document.writeln(numbers.join("--"));
+
+    /**
+     * Sắp xếp các phần tử trong mảng
+     */
+    document.writeln("Các phần tử trước khi sắp xếp: " + numbers.join("--"))
+    document.writeln("<br>");
+    document.writeln("Các phần tử sau khi sắp xếp: " + numbers.sort(function (a, b) {
+        return b - a;
+    }).join("--"))
+</script>
+</body>
+</html>

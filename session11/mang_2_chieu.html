@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  let students = [
+          ["Huyền", 20, "huyen@gmail.com", "Đà Nẵng"],
+          ["Long", 21, "long@gmail.com", "Quảng Nam"],
+          ["Từ", 24, "tu@gmail.com", "Huế"],
+          ["Huy", 18, "huy@gmail.com", "Đà Nẵng"]
+  ]
+  students[2][2] = "tu2012@gmail.com";
+  /**
+   * Duyệt bằng for
+   */
+  // for (let i = 0 ; i < students.length; i++){
+  //   for (let j = 0; j < students[i].length; j++){
+  //     document.writeln(students[i][j]);
+  //   }
+  //   document.writeln("<br>")
+  // }
+
+  /**
+   * Duyệt bằng for-of
+   */
+  // for (let student of students){
+  //   for (let information of student){
+  //     document.writeln(information);
+  //   }
+  //   document.writeln("<br>")
+  // }
+</script>
+</body>
+</html>
