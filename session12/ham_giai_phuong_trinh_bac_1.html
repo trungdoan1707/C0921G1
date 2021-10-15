@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    /**
+     * Hàm giải phương trình bậc 1 ax + b = 0;
+     */
+    function giaiPhuongTrinh(a, b) {
+        if (a === 0) {
+            if (b === 0) {
+                return "Phương trình vô số nghiệm";
+            } else {
+                return "Phương trình vô nghiệm";
+            }
+        } else {
+            return "Phương trình có nghiệm là: " + -b/a;
+        }
+    }
+
+    let result = giaiPhuongTrinh(1,0);
+    document.writeln(result);
+</script>
+</body>
+</html>

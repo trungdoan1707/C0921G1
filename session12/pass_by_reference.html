@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    /**
+     * Pass by Reference: Truyền tham chiếu
+     */
+    let arr = [5, 10];
+
+    function swap(arr) {
+        let temp = arr[0];
+        arr[0] = arr[1];
+        arr[1] = temp;
+        //Kết quả trong hàm
+        document.writeln("<h1>Kết quả ở trong hàm là: " + arr.join("--") + "</h1>")
+    }
+    swap(arr);
+    document.writeln("<h1> Kết quả ở ngoài hàm là: " + arr.join("--") + "</h1>")
+</script>
+</body>
+</html>

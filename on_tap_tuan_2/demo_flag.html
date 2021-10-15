@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+  /**
+   * Ứng dụng cho phép kiểm tra thông tin người dùng nhập vào phải là username = admin
+   * password = 123
+   * nếu nhập sai yêu cầu nhập lại.
+   * Nếu nhập đúng thì in thông báo lên màn hình cho người dùng
+   */
+  let username;
+  let password;
+  let flag = false;
+  while (!flag){
+    username = prompt("Nhập username của bạn: ");
+    password = prompt("Nhập password của bạn: ");
+    if (username === "admin" && password === "123"){
+      flag = true;
+    }
+  }
+  document.writeln("<h1>Chào mừng anh admin mới vừa đăng nhập thành công</h1>")
+
+
+
+</script>
+</body>
+</html>
