@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class Student {
+        constructor(name, age, address, email, phone) {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+            this.email = email;
+            this.phone = phone;
+        }
+
+        say() {
+            document.writeln("Say Hello!!");
+        };
+
+        move() {
+            document.writeln("driven by moto bike");
+        }
+
+        eat() {
+            document.writeln("ăn cơm gà");
+        }
+
+        displayInformation() {
+            document.writeln("Họ tên sinh viên: " + this.name);
+            document.writeln("<br>");
+            document.writeln("Tuổi sinh viên: " + this.age);
+            document.writeln("<br>");
+            document.writeln("Địa chỉ sinh viên: " + this.address);
+            document.writeln("<br>");
+        }
+    }
+
+    let student1 = new Student("Nguyễn Văn A", 25, "Đà Nẵng", "nguyena@gmail.com", "092234643");
+    let student2 = new Student("Nguyễn Văn B", 23, "Quảng Nam", "nguyenb@gmail.com", "092233432");
+    let students = [student1, student2];
+    for (let student of students) {
+        student.displayInformation();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+  class Employee {
+    constructor(name, salary, address) {
+      this.name = name;
+      this._salary = salary;
+      this.address = address;
+    }
+    displayEmployee(){
+      document.writeln("Tên nhân viên: " + name);
+      document.writeln("Địa chỉ nhân viên: " + this.address);
+    }
+  }
+
+  let employee = new Employee("Nguyễn Văn A", 1000, "Đà Nẵng");
+  employee.displayEmployee();
+</script>
+</body>
+</html>
